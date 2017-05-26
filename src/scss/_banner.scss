@@ -1,0 +1,24 @@
+.banner-wrapper {
+  position: relative;
+  padding: 50px;
+
+  /* https://uigradients.com */
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #c33764, #1d2671); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c33764, #1d2671);
+}
+.banner-border {
+  border: $banner-border-width solid $banner-border-color;
+}
+.banner-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-image {
+  margin: 50px;
+  height: $banner-image-width;
+  width: $banner-image-width;
+  border-radius: $banner-image-width / 2;
+  border: $banner-border-width solid $banner-border-color;
+}
