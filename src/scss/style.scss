@@ -1,11 +1,21 @@
+.shaddow {
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+}
+
 @import 'variables';
 @import 'reset';
 
 @import 'banner';
+@import 'projects';
 
 html, body {}
 
-body {}
+body {
+  font-family: 'Raleway', sans-serif;
+  // font-family: 'Lato', sans-serif;
+}
 
 @media (min-width:320px) {
   /* smartphones, iPhone, portrait 480x320 phones */

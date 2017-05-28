@@ -1,0 +1,56 @@
+#projects {
+  @extend .shaddow;
+
+  h3 {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .project {
+    padding: 80px 160px;
+    color: #FFF;
+
+    &.steamleft {
+      background: #2980b9;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    &.myemailbook {
+      background: #c2e59c;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    &.accountabuddy {
+      background: #2c3e50;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .project-content {
+      max-width: 700px;
+      margin: 0 auto;
+
+      img {
+        border: $banner-border-width solid $banner-border-color;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      h5 {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
