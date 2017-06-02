@@ -1,12 +1,12 @@
 .banner-wrapper {
-  min-height: 400px;
-  position: relative;
+  height: 100%;
+  position: fixed;
   padding: 50px;
 
   /* https://uigradients.com */
-  background: #c33764; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #c33764, #1d2671); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #c33764, #1d2671);
+  background: #30E8BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, darken(#30E8BF, 10%), darken(#FF8235, 10%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, darken(#30E8BF, 10%), darken(#FF8235, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   // clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
@@ -51,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   // -ms-transform: skew(-20deg); /* IE 9 */
