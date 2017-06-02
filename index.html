@@ -13,7 +13,7 @@
   <meta name="author" content="Nick">
 
   <script src="https://use.fontawesome.com/d425ba6e6c.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Droid+Sans" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/style.css">
 
@@ -23,72 +23,86 @@
 </head>
 
 <body>
-  <div class="banner-wrapper">
-    <div class="banner-border">
-      <div class="banner-container">
-        <div class="banner-image">
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="container">
+        <div class="image">
           <img src="assets/images/me.jpg" />
         </div>
-        <div class="banner-body">
-          <h1>Code slinger for hire</h1>
+        <div class="body">
+          <h3>Code slinger for hire</h3>
           <p></p>
           <div class="social">
             <a href="https://github.com/nmajor"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://linkedin.com/in/nmajor"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href="https://instagram/_nmajor"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="http://blog.nmajor.com"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <a href="https://instagram/_nmajor"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://twitter.com/_nmajor"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- <div class="banner-wrapper-skew">
-    <div class="banner-border-skew"></div>
-  </div> -->
-  <div id="projects" class="content-block">
-      <div class="bio">
-        <h3>Hello</h3>
-        <p>Personal bio goes here</p>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <div class="content">
+      <div id="bio">
+        <h1>Hello</h1>
+        <p>I am a full stack web developer. Throughout my career I've build and worked on projects in Ruby, Node, Python, and even Perl, using frameworks such as Rails, Sinatra, Express, Django, React and React Native, and these days I deploy my projects inside Docker contianers.</p>
+        <p>I hope I am using enough buzz words.</p>
+        <p>Thanks for checking out my page. Below are some personal projects that I am proud of.</p>
       </div>
-      <div class="project steamleft">
-        <div class="project-content">
-          <img src="assets/images/steamleft.png" />
-          <h5>steamleft.com</h5>
-          <p>
-            Steamleft had over 650,000 unique visitors, and 500,000 participating users in its first week. It was featured on PCGamer, Kotaku, The Escapist, and dozens of more online outlets.
-          </p>
-          <p>
-            Steamleft is a webapp that aggregates and compares data between your personal Steam API and HowLongToBeat's data to estimate how much time it would take to beat your entire Steam library. It also provides hilarious alternatives for what you could be doing with your time, like reading The Hobbit or running across the United States a certain number of times.
-          </p>
-        </div>
+
+      <div class="dot-bumper">
+        <span>&middot;</span>
+        <span>&middot;</span>
+        <span>&middot;</span>
+        <span>&middot;</span>
+        <span>&middot;</span>
       </div>
-      <div class="project mealmeter">
-        <div class="project-content">
-          <img src="assets/images/mealmeter.png" />
-          <h5>Meal Meter</h5>
-          <p>
-            Meal Meter is an app to help people develop beter eating habits. It lets users enter goals and then after each meal they can evaluate how well they followed each goal giving them personal accountability and helping them become more mindful about their meal choices.
-          </p>
-          <p>
-            Meal Meter is built with React Native and is available in the Apple App Store.
-          </p>
-        </div>
+
+      <div id="projects" class="content-block">
+          <div class="project steamleft">
+            <div class="image">
+              <img src="assets/images/steamleft.png" />
+            </div>
+            <h3>steamleft.com</h3>
+            <p>
+              Steamleft had over 650,000 unique visitors, and 500,000 participating users in its first week. It was featured on PCGamer, Kotaku, The Escapist, and dozens of more online outlets.
+            </p>
+            <p>
+              Steamleft is a webapp that aggregates and compares data between your personal Steam API and HowLongToBeat's data to estimate how much time it would take to beat your entire Steam library. It also provides hilarious alternatives for what you could be doing with your time, like reading The Hobbit or running across the United States a certain number of times.
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="project mealmeter">
+            <div class="image">
+              <img src="assets/images/mealmeter.png" />
+            </div>
+            <h3>Meal Meter</h3>
+            <p>
+              Meal Meter is an app to help people develop beter eating habits. It lets users enter goals and then after each meal they can evaluate how well they followed each goal giving them personal accountability and helping them become more mindful about their meal choices.
+            </p>
+            <p>
+              Meal Meter is built with React Native and is available in the Apple App Store.
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="project myemailbook">
+            <div class="image">
+              <img src="assets/images/myemailbook.png" />
+            </div>
+            <h3>myemailbook.com</h3>
+            <p>
+              You know that shoebox on your top shelf where you keep all your favorite letters? Probably not! People dont write letters anymore. We Facebook message, we text, we snapchat, and sometimes we even email.
+            </p>
+            <p>
+              Most of the time those emails are meaningless. But sometimes there is something special, something you would like to keep forever. MyEmailBook helps you create a custom printed book from your emails.
+            </p>
+          </div>
       </div>
-      <div class="project myemailbook">
-        <div class="project-content">
-          <img src="assets/images/myemailbook.png" />
-          <h5>myemailbook.com</h5>
-          <p>
-            You know that shoebox on your top shelf where you keep all your favorite letters? Probably not! People dont write letters anymore. We Facebook message, we text, we snapchat, and sometimes we even email.
-          </p>
-          <p>
-            Most of the time those emails are meaningless. But sometimes there is something special, something you would like to keep forever. MyEmailBook helps you create a custom printed book from your emails.
-          </p>
-        </div>
-      </div>
+    </div>
   </div>
   <script src="/assets/script.js"></script>
 </body>

@@ -4,13 +4,153 @@
   box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
 }
 
+// Business card gradient:
+// https://uigradients.com/#CosmicFusion
+
+// FOnts
+// https://fonts.google.com/?selection.family=Cabin|Droid+Sans&query=cabin
+
 @import 'variables';
 @import 'reset';
 
-@import 'banner';
-@import 'projects';
+// @import 'banner';
+// @import 'projects';
 
-html, body {}
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $background-color;
+  font-family: 'Cabin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: lighten($text-color, 20%);
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0 100px 30px 100px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 100px;
+}
+hr {
+  width: 100%;
+  margin: 50px auto;
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #AAA; /* old IE */
+  background-color: #888; /* Modern Browsers */
+}
+.dot-bumper {
+  margin: 40px auto;
+  text-align: center;
+  span {
+    margin: 0 20px;
+  }
+}
+
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  color: #FFF;
+  position: fixed;
+  background: #ffd89b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  width: $sidebar-width;
+  flex: 1;
+  display: flex;
+
+  h3 {
+    color: #FFF;
+  }
+
+  .container {
+    width: 100%;
+    margin: 30px;
+    border: $banner-border-width solid $banner-border-color;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    height: $banner-image-width + ($banner-border-width * 2);
+    width: $banner-image-width + ($banner-border-width * 2);
+    margin-bottom: 30px;
+
+    img {
+      height: $banner-image-width;
+      border-radius: $banner-image-width / 2;
+      border: $banner-border-width solid $banner-border-color;
+    }
+  }
+  .body {
+    h5 {
+      text-align: center;
+      font-size: 25px;
+    }
+    .social {
+      text-align: center;
+      margin-top: 30px;
+      a {
+        color: #DDD;
+        margin: 0 5px;
+
+        &:hover {
+          color: #FFF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  background: $background-color;
+  color: $text-color;
+  flex: 1;
+  height: 100%;
+  margin-left: $sidebar-width;
+  padding: 70px;
+
+  #bio {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  #projects {
+    margin-top: 50px;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    .project {
+      margin-bottom: 50px;
+      .image {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
 
 body {
   font-family: 'Raleway', sans-serif;
