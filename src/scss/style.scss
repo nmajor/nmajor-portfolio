@@ -28,13 +28,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: lighten($text-color, 20%);
   font-family: 'Droid Sans', sans-serif;
-  margin: 0 100px 30px 100px;
+  margin: 0 20px 30px 20px;
   margin-bottom: 30px;
 }
 p {
   font-size: 16px;
   line-height: 24px;
-  margin: 10px 100px;
+  margin: 10px 20px;
 }
 hr {
   width: 100%;
@@ -55,23 +55,28 @@ hr {
 
 
 .wrapper {
-  display: flex;
+  display: block;
   height: 100%;
 }
 
 .sidebar {
   color: #FFF;
-  position: fixed;
   background: #ffd89b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  height: 100%;
-  width: $sidebar-width;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+
+  width: 100%;
+  height: $sidebar-width;
   flex: 1;
   display: flex;
 
   h3 {
+    text-align: center;
+    margin: 0;
     color: #FFF;
   }
 
@@ -123,8 +128,8 @@ hr {
   color: $text-color;
   flex: 1;
   height: 100%;
-  margin-left: $sidebar-width;
-  padding: 70px;
+  padding: 10px;
+  margin-top: 30px;
 
   #bio {
     h1 {
@@ -144,6 +149,14 @@ hr {
       .image {
         margin-bottom: 50px;
       }
+
+      &.mealmeter {
+        .image {
+          img {
+            border: 1px solid #ccc;
+          }
+        }
+      }
     }
   }
 
@@ -157,26 +170,75 @@ body {
   // font-family: 'Lato', sans-serif;
 }
 
-@media (min-width:320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-}
-
 @media (min-width:481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
 @media (min-width:641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 50px 30px 50px;
+  }
+  p {
+    margin: 10px 50px;
+  }
 }
 
 @media (min-width:961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 100px 30px 100px;
+  }
+  p {
+    margin: 10px 100px;
+  }
+  .content {
+    padding: 70px;
+  }
 }
 
 @media (min-width:1025px) {
   /* big landscape tablets, laptops, and desktops */
+  .wrapper {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    width: $sidebar-width;
+  }
+
+  .content {
+    margin-left: $sidebar-width;
+    padding: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 50px 30px 50px;
+  }
+  p {
+    margin: 10px 50px;
+  }
 }
 
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 100px 30px 100px;
+  }
+  p {
+    margin: 10px 100px;
+  }
+  .content {
+    padding: 70px;
+    max-width: 800px;
+  }
+}
+
+@media (min-width:1500px) {
+
 }
