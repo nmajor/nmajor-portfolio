@@ -157,6 +157,14 @@ hr {
           }
         }
       }
+
+      &.cardistry {
+        .image {
+          img {
+            border: 1px solid #ccc;
+          }
+        }
+      }
     }
   }
 
